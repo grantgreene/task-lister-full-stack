@@ -8,7 +8,7 @@ const router = require('./routes/routes.js');
 const app = express();
 
 port = 5000;
-app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 app.use(cors());
 
 app.use(express.json());
